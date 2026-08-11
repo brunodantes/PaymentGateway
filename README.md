@@ -1,6 +1,6 @@
-# Checkout.PaymentGateway
+# PaymentGateway
 
-`Checkout.PaymentGateway` is a simple, modular **Payment Gateway** built with **.NET**, designed to:
+`PaymentGateway` is a simple, modular **Payment Gateway** built with **.NET**, designed to:
 
 - Receive and validate payment requests  
 - Call an external **Bank Simulator** service  
@@ -16,14 +16,14 @@ The project is ideal for learning, testing, and demonstrating patterns such as v
 
 The solution is split into multiple projects:
 
-- **Checkout.PaymentGateway.API** – ASP.NET Core Web API, controllers, DI configuration, Serilog, Swagger  
-- **Checkout.PaymentGateway.Application** – Application services and validators  
-- **Checkout.PaymentGateway.Contract** – Request/response contracts and enums  
-- **Checkout.PaymentGateway.Domain** – Domain interfaces  
-- **Checkout.PaymentGateway.Entities** – Domain entities  
-- **Checkout.PaymentGateway.Infrastructure** – Bank Simulator integration (Refit + Polly)  
-- **Checkout.PaymentGateway.Data** – In-memory repository implementation  
-- **Checkout.PaymentGateway.Application.Tests** – Unit tests and fakes  
+- **PaymentGateway.API** – ASP.NET Core Web API, controllers, DI configuration, Serilog, Swagger  
+- **PaymentGateway.Application** – Application services and validators  
+- **PaymentGateway.Contract** – Request/response contracts and enums  
+- **PaymentGateway.Domain** – Domain interfaces  
+- **PaymentGateway.Entities** – Domain entities  
+- **PaymentGateway.Infrastructure** – Bank Simulator integration (Refit + Polly)  
+- **PaymentGateway.Data** – In-memory repository implementation  
+- **PaymentGateway.Application.Tests** – Unit tests and fakes  
 
 ---
 
@@ -138,7 +138,7 @@ Registered as a **singleton**, so data resets when the application restarts.
 ```
 dotnet restore
 dotnet build
-cd Checkout.PaymentGateway.API
+cd PaymentGateway.API
 dotnet run
 ```
 
